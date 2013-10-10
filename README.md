@@ -9,8 +9,11 @@ We have mounted a /data/redis in host to /redis in the docker containerwhere we'
 I have used my [redis.conf](https://gist.github.com/cggaurav/6911298/raw/327b159a98212fb8aa81f09e9eb7e7f3867642a5/redis.conf) . You are free
 to use yours in Dockerfile post fork.
 
-* `sudo docker build -t redis .`
-* `sudo docker run redis -h` for all options
-* `sudo docker run -v /data/redis:/redis redis` for defaults
+Before you docker run
+'wget --no-check-certificate -o /data/redis/redis.conf https://gist.github.com/cggaurav/6911298/raw/327b159a98212fb8aa81f09e9eb7e7f3867642a5/redis.conf'
+
+* `docker build -t redis .`
+* `docker run redis -h` for all options
+* `docker run -v /data/redis:/redis redis` for defaults
 
 * 6379 -> 6379
