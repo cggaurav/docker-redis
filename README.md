@@ -9,6 +9,8 @@ We have mounted a /data/redis in host to /redis in the docker containerwhere we'
 I have used my [redis.conf](https://gist.github.com/cggaurav/6911298/raw/327b159a98212fb8aa81f09e9eb7e7f3867642a5/redis.conf) . You are free
 to use yours in Dockerfile post fork.
 
+Use [S3 Backups](http://s3-backups.readthedocs.org/en/latest/) to run your backups via Cron.
+
 That redis conf files has to go into /data/redis
 
 * `docker build -t redis .`
