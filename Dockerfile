@@ -8,4 +8,4 @@ RUN (cd /tmp && tar zxf redis.tar.gz && cd redis-* && make install && cp redis.c
 RUN rm -rf /tmp/*
 EXPOSE 6379:6379
 ENTRYPOINT ["/usr/local/bin/redis-server"]
-CMD ["/data/redis/redis.conf"]
+CMD ["/redis/redis.conf"]
